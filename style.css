@@ -1,0 +1,60 @@
+body {
+    background-color: #e6f5d0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-top: 20px;
+}
+.logo {
+    width: 200px;
+    margin-bottom: 10px;
+    animation: girar 5s linear infinite, brilhar 2s ease-in-out infinite alternate;
+}
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes brilhar {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.5); }
+}
+#palavra {
+    font-size: 28px;
+    color: #006400;
+    margin: 10px;
+}
+#letrasErradas {
+    font-size: 18px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+button {
+    background-color: #ffcc00;
+    color: #006400;
+    font-size: 16px;
+    margin: 2px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+button:hover {
+    background-color: #ffd633;
+}
+.reiniciar {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    #forcaCanvas {
+        width: 90vw;
+        height: auto;
+    }
+    #palavra { font-size: 22px; }
+    button { width: 12vw; height: 12vw; font-size: 4vw; margin: 2px; }
+}

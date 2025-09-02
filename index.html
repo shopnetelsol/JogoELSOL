@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Forca - Elsol Ultimate Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo_elsol.png" alt="Logo Elsol" class="logo">
+        <h1>Jogo da Forca</h1>
+        <audio id="musica" loop autoplay>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+        <canvas id="forcaCanvas" width="300" height="300"></canvas>
+        <p id="palavra"></p>
+        <p id="letrasErradas"></p>
+        <div id="botoes"></div>
+        <button class="reiniciar" onclick="reiniciar()">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
